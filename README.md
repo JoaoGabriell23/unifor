@@ -1,2 +1,2 @@
 # unifor
-repositorio da disciplina da unifor
+repositorio das disciplinas na unifor
