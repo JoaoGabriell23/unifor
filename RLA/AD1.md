@@ -7,8 +7,8 @@
 **Aluno(a):** Joao Gabriel Lemos Gomes <br>
 **Matrícula:** 2410597 <br>
 
-**1a chamada (Sim/Não):** sim <br>
-**2a chamada (Sim/Não):** não
+**1a chamada (Sim/Não):** não <br>
+**2a chamada (Sim/Não):** sim <br>
 
 # Avaliação Diagnóstica 1
 
