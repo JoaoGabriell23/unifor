@@ -129,27 +129,27 @@ I --> Z([FIM])
 
 ```
 Algoritmo aprovação
-DECLARE N_ver, N_aprov, N_notas, i: Int  // Declaração de variáveis: N_ver, N_aprov, N_notas, e i como inteiros
+DECLARE N_ver, N_aprov, N_notas, i: Int  // Declaração de variáveis: 
 	notas: Float                        // Declaração da variável notas como ponto flutuante
 INICIO
-N_aprov = 0                             // Inicialização da variável N_aprov com 0
-ESCREVA "Digite a quantidade de notas para avaliar" // Exibe uma mensagem para o usuário
-LEIA N_notas                            // Lê a quantidade de notas a serem avaliadas
+N_aprov = 0                            
+ESCREVA "Digite a quantidade de notas para avaliar" 
+LEIA N_notas                            // variavel sobre a quantidade de notas avaliadas
 ENQUANTO N_notas <= 0 REPITA            // Enquanto o número de notas for menor ou igual a 0
 	ESCREVA "Digite uma quantidade válida"    // Exibe uma mensagem de erro
-	LEIA N_notas                             // Lê novamente a quantidade de notas
+	LEIA N_notas                     
 PARA N_ver DE 1 ATÉ N_notas FAÇA [PASSO 1] // Loop de 1 até N_notas, com passo 1
-	ESCREVA "Insira a nota"                   // Solicita ao usuário que insira a nota
-	LEIA nota                                 // Lê a nota digitada pelo usuário
+	ESCREVA "Insira a nota"                   
+	LEIA nota                       
 	SE nota >= 50 E nota <= 100               // Se a nota estiver entre 50 e 100
 		N_aprov =+ 1                             // Incrementa o contador de notas aprovadas
 		N_ver =+ 1                               // Incrementa o contador de notas verificadas
-	SENÃO                                    // Senão
+	SENÃO                                   
 		N_ver =+ 1                               // Apenas incrementa o contador de notas verificadas
 	FIM_SE                                   // Fim da estrutura condicional SE
 FIM_PARA                                 // Fim do loop PARA
-ESCREVA "A quantidade de notas aprovadas foi", N_aprov // Exibe a quantidade de notas aprovadas
-FIM_ALGORÍRIMO                           // Fim do algoritmo
+ESCREVA "A quantidade de notas aprovadas foi", N_aprov
+FIM_ALGORÍRIMO                           
 
 ```
 
@@ -320,21 +320,21 @@ K --> L([FIM])
 
 ```
 Algoritmo soma_da_serie
-DECLARE Num_termo, termo: Int   // Declaração das variáveis Num_termo e termo como números inteiros
+DECLARE Num_termo, termo: Int   // Declaração das variáveis
     S: Float                    // Declaração da variável S como número de ponto flutuante
 INICIO
-S = 0                            // Inicialização da variável S com 0
-ESCREVA "Digite a quantidade de termos da série que você quer somar"   // Solicita ao usuário a quantidade de termos da série
-LEIA Num_termo                  // Lê o número de termos da série inserido pelo usuário
+S = 0                           
+ESCREVA "Digite a quantidade de termos da série que você quer somar"   
+LEIA Num_termo                  // Lê o número de termos que foi adicionado pelo usuario
 ENQUANTO Num_termo < 0 FAÇA      // Enquanto o número de termos for menor que 0
-    ESCREVA "Digite uma quantidade válida"   // Exibe uma mensagem de erro
-    LEIA Num_termo               // Lê novamente o número de termos
-FIM_ENQUANTO                    // Fim do loop enquanto
+    ESCREVA "Digite uma quantidade válida"   // Exibe uma mensagem de errro
+    LEIA Num_termo               // Lê de novo a variavel 
+FIM_ENQUANTO                   
 PARA termo DE 1 ATÉ Num_termo [PASSO 1] FAÇA   // Loop de 1 até o número de termos da série, com passo 1
-    S =+ (2 * termo - 1)/(2 * termo)          // Adiciona à variável S o resultado da expressão (2 * termo - 1) / (2 * termo)
+    S =+ (2 * termo - 1)/(2 * termo)          
 FIM_PARA                        // Fim do loop para
-ESCREVA "O valor da soma de", Num_termo, "termo(s) da série é", S   // Exibe o valor da soma da série
-FIM_ALGORITMO                   // Fim do algoritmo
+ESCREVA "O valor da soma de", Num_termo, "termo(s) da série é", S   
+FIM_ALGORITMO                  
 
 ```
 
@@ -393,21 +393,21 @@ Y --> Z([FIM])
 
 ```
 Algoritmo fatorial
-DECLARE fato, n_mult, n: Int       // Declaração das variáveis fato, n_mult e n como números inteiros
+DECLARE fato, n_mult, n: Int       // Declaração das variáveis
 INICIO
-n_mult = 0                          // Inicialização da variável n_mult com 0
-ESCREVA "Digite o numero do fatorial que voce quer calcular"   // Solicita ao usuário que digite o número para calcular o fatorial
-LEIA n                              // Lê o número digitado pelo usuário
+n_mult = 0                         
+ESCREVA "Digite o numero do fatorial que voce quer calcular" 
+LEIA n                              // Lê o número digitado pelo usuario
 ENQUANTO n < 0 FAÇA                 // Enquanto o número for menor que 0
     ESCREVA "Digite um fatorial válido"   // Exibe uma mensagem de erro
-    LEIA n                           // Lê novamente o número
-FIM_ENQUANTO                        // Fim do loop enquanto
+    LEIA n                          
+FIM_ENQUANTO                        // Fim do loop 
 PARA n_mult DE 1 PARA n [PASSO 1] FAÇA  // Loop de 1 até o número digitado pelo usuário
-    n_mult =+ 1                        // Incrementa o contador n_mult
+    n_mult =+ 1                        // Incrementa  n_mult
     fato = fato * n_mult               // Calcula o fatorial multiplicando fato pelo contador n_mult
-FIM_PARA                            // Fim do loop para
-ESCREVA "O valor do fatorial de", n, "é", fato   // Exibe o resultado do fatorial
-FIM_ALGORITMO                       // Fim do algoritmo
+FIM_PARA                           
+ESCREVA "O valor do fatorial de", n, "é", fato   
+FIM_ALGORITMO                       
 
 ```
 
@@ -508,23 +508,23 @@ I --LOOP--> E
 
 ```
 Algoritmo fibonacci
-DECLARE T1, T2, Tmem, TS, i: Int     // Declaração das variáveis T1, T2, Tmem, TS e i como números inteiros
+DECLARE T1, T2, Tmem, TS, i: Int     // Declaração das variáveis 
 INICIO
-T1 = 0                               // Inicialização do primeiro termo de Fibonacci (T1) como 0
-T2 = 1                               // Inicialização do segundo termo de Fibonacci (T2) como 1
-ESCREVA "Digite qual termo de fibonacci você quer calcular"   // Solicita ao usuário que digite o número do termo de Fibonacci a ser calculado
-LEIA TS                             // Lê o número do termo de Fibonacci digitado pelo usuário
+T1 = 0                              
+T2 = 1                                
+ESCREVA "Digite qual termo de fibonacci você quer calcular"   
+LEIA TS                             // Lê a variavel 
 ENQUANTO TS <= 0 FAÇA               // Enquanto o número do termo de Fibonacci for menor ou igual a 0
     ESCREVA "Digite um termo válido"   // Exibe uma mensagem de erro
     LEIA TS                         // Lê novamente o número do termo de Fibonacci
 FIM_ENQUANTO                        // Fim do loop enquanto
-PARA i DE 1 ATÉ TS [PASSO 1] FAÇA   // Loop de 1 até o termo de Fibonacci desejado, com passo 1
-    ESCREVA T1                      // Exibe o termo atual da sequência de Fibonacci
-    Tmem = T1 + T2                  // Calcula o próximo termo da sequência de Fibonacci somando os dois termos anteriores (T1 e T2)
+PARA i DE 1 ATÉ TS [PASSO 1] FAÇA   // Loop de 1 até o termo de Fibonacci
+    ESCREVA T1      
+    Tmem = T1 + T2                  
     T1 = T2                         // Atualiza o primeiro termo (T1) com o valor do segundo termo anterior (T2)
     T2 = Tmem                       // Atualiza o segundo termo (T2) com o valor do termo temporário (Tmem)
-FIM_PARA                            // Fim do loop para
-FIM_ALGORITMO                       // Fim do algoritmo
+FIM_PARA                           
+FIM_ALGORITMO                       
 ```
 #### Teste de mesa
 
@@ -636,23 +636,23 @@ E --> W
 
 ```
 Algoritmo Inver
-DECLARE Num, Num_inv, mem, mem2: Int   // Declaração das variáveis Num, Num_inv, mem e mem2 como números inteiros
+DECLARE Num, Num_inv, mem, mem2: Int   // Declaração das variáveis
 INICIO
-ESCREVA "Digite o número que você quer inverter"   // Solicita ao usuário que digite o número a ser invertido
+ESCREVA "Digite o número que você quer inverter" 
 LEIA Num                            // Lê o número digitado pelo usuário e o armazena em Num
 mem2 = Num                         // Armazena o valor original de Num em mem2 para exibição posterior
 ENQUANTO Num <= 9 FAÇA             // Enquanto o número for menor ou igual a 9
     ESCREVA "O número precisa ser positivo e ter mais de dois algarismos"   // Exibe uma mensagem de erro
-    ESCREVA "Digite o número que você quer inverter"   // Solicita ao usuário que digite o número novamente
-FIM_ENQUANTO                       // Fim do loop enquanto
+    ESCREVA "Digite o número que você quer inverter"   
+FIM_ENQUANTO             
 ENQUANTO Num > 0 FAÇA              // Enquanto o número for maior que 0
     mem = Num % 10                 // Calcula o último dígito do número e o armazena em mem
     Num = Num // 10                 // Remove o último dígito do número
     Num_inv = Num_inv * 10         // Multiplica o número invertido por 10
     Num_inv = Num_inv + mem        // Adiciona o último dígito ao número invertido
-FIM_ENQUANTO                       // Fim do loop enquanto
-ESCREVA "O número", mem2, "após inverter os algarismos é", Num_inv   // Exibe o número original e o número invertido
-FIM_ALGORITMO                      // Fim do algoritmo
+FIM_ENQUANTO                       
+ESCREVA "O número", mem2, "após inverter os algarismos é", Num_inv  
+FIM_ALGORITMO                 
 
 ```
 
